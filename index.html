@@ -13,12 +13,7 @@ color:black;
 a:visited{
 color:grey;
 }
-table {
-    font-family: 'Anaheim';font-size: 14px;
-}
-body {
-    font-family: 'Anaheim';font-size: 14px;
-}
+
 @font-face {
     font-family: 'munich_regular';
     src: url('munichregular-y8x4-webfont.woff2') format('woff2'),
@@ -27,20 +22,40 @@ body {
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'kindelregular';
+    src: url('kindel-4b3r9-webfont.woff2') format('woff2'),
+         url('kindel-4b3r9-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+table {
+    font-family: 'kindelregular';font-size: 14px;
+}
+body {
+    font-family: 'kindelregular';font-size: 16px;
+}
 h1 {
     font-family: 'munich_regular';font-size: 44px;margin:0px;
+     padding-top: 30px; padding-bottom: 15px; text-align: center; 
 }
 
 h2 {
     font-family: 'munich_regular';font-size: 24px;margin-bottom:0px;
 }
 h1sub {
-    font-family: 'Anaheim';font-size: 12px;
+    font-family: 'kindelregular'; font-size: 12px;  
+    padding: 30px;
 }
 h4 {
-    font-family: 'Anaheim';font-size: 14px; font-variant: small-caps; font-weight:550; margin-bottom:0px;
+    font-family: 'kindelregular';font-size: 14px; font-variant: small-caps; font-weight:550; margin-bottom:0px;
 }
-
+.subHead{
+		font-family: 'kindelregular';
+		text-align: center;
+		margin-bottom:30px;
+		}
 nav {
     font-family: 'munich_regular';font-size: 20px; font-weight:600;
 }
@@ -55,28 +70,45 @@ nav {
     <h1>
         Sadia Tabassum
     </h1>
-    <h1sub> 
-        sxt901 at cs dot bham dot ac dot uk 
-    </br>
+    <div class="subHead">
+        Email: sxt901 at cs dot bham dot ac dot uk 
+    <br>
     PhD Student (
     <a href="http://www.cs.bham.ac.uk">Department of Computer Science</a>,
     <a href="http://www.bham.ac.uk">University of Birmingham</a>)
-    </h1sub>
+  
+    <div>
 
 <hr>
 <nav>
-    <a href="#intro">About</a>
+    <a href="#intro">About Me</a>
     |
-    <a href="#projects">Projects</a>
+    <a href="#projects">My Work</a>
     |
-   <!-- <a href="#awards">Awards</a>-->
+     <a href="#publication">Publication</a>
+    |
+    <a href="#awards">Awards</a>
     </nav>
     </header>
     <main>
-<section id="intro">
-    <p>Intro</p> </section>
+<section id="intro"><h2>About Me</h2>
+    <p>My research area is Machine Learning for Software Engineering, supervised by Dr. Leandro Minku and Dr. Rami Bahsoon. My PhD is fully funded by University of Birmingham.<br><br>
+    I have an MSc in Advanced Software Engineering from University of Leicester. After my undergraduate in Computer Science and Engineering, I have worked as a frontend developer in a multi national digital agency in London. </p> </section>
 
-<section id="projects"><h2>Projects</h2>
+<section id="projects"><h2>My Work</h2>
+<p>
+During my PhD, I worked in the project SPDISC (Stable Prediction of Defect-Inducing Software Changes). This project aims at creating more stable models for predicting defect-inducing changes, through the development of a novel machine learning approach for automatically adapting to concept drift. 
+<br><br>
+I have developed novel approaches for online cross-project JIT-SDP. My work on this area has been accepted in 
+<a href="https://conf.researchr.org/home/icse-2020">ICSE 2020</a>
+<br><br>
+I have volunteering experience in journal reviewing for a well known journal.
+<br><br>
+For my MSc thesis, I developed an approach for solving touristic route planning problem using Evolutionary algorithm. I have designed an efficient fitness function for the algorithm which lead to very good results to solve the problem.
+<br>
+<br>
+Besides, previously as a Frontend developer in an Agile Scrum team, I have worked in different projects including development of different data driven <a href="https://www.wtatennis.com/">websites<a>.
+</p>
 <table>
 <!--<tr>
 <th style="width:80%"></th>
@@ -92,10 +124,19 @@ nav {
 </table>
 </section>
 <hr>
-<section id="misc"><h2>Misc</h2>
+<section id="publication"><h2>Publication</h2>
+</p>TABASSUM, S.; MINKU, L.L.; FENG, D.; CABRAL, G.; SONG, L. . "An Investigation of Cross-Project Learning in Online Just-In-Time Software Defect Prediction", 2020 International Conference on Software Engineering (ICSE), 2020 (accepted). <b>(Acceptance rate 20.9%)</b>. Paper is also available <a href="https://www.cs.bham.ac.uk/~minkull/publications/TabassumICSE20.pdf">here</a>.
 </p>
 </section>
 <section id="awards"><h2>Awards</h2>
+<ul>
+	<li>PhD full scholarship by University of Birmingham</li>
+	<li>MSc Postgraduate merit scholarship by University of Leicester</li>
+</ul>	
+ </section>
+ 
+ <section id="misc">
+ 
  </section>
     </main>
 </body>
